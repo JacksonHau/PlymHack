@@ -1,4 +1,12 @@
-// JavaScript for handling form submissions and button clicks
+// JavaScript for handling menu and form submissions
+
+// Toggle menu visibility
+const menuButton = document.querySelector('.menu-button');
+const menu = document.querySelector('.menu');
+
+menuButton.addEventListener('click', () => {
+  menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+});
 
 // Personality Quiz Form Submission
 const personalityQuizForm = document.querySelector('.personality-quiz form');
@@ -9,15 +17,8 @@ if (personalityQuizForm) {
   });
 }
 
-// Group and Event Buttons
-const groupButtons = document.querySelectorAll('.groups .card button');
-groupButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    alert('You have successfully joined the group!');
-  });
-});
-
-const eventButtons = document.querySelectorAll('.events .card button');
+// Event Buttons
+const eventButtons = document.querySelectorAll('.events-carousel .card button');
 eventButtons.forEach((button) => {
   button.addEventListener('click', () => {
     alert('You have successfully joined the event!');

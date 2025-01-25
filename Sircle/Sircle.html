@@ -1,22 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sircle</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
-    <h1>Sircle</h1>
-    <p>Find your tribe and make plans effortlessly!</p>
+    <img src="logo.png" alt="Sircle Logo" class="logo">
+    <nav>
+      <button class="menu-button">Menu</button>
+      <div class="menu">
+        <a href="index.html">Home Page</a>
+        <a href="edit-profile.html">Edit My Profile</a>
+        <a href="recommended-events.html">Recommended Events</a>
+        <a href="upcoming-events.html">Upcoming Events</a>
+        <a href="past-events.html">Past Events</a>
+        <a href="recommend-event.html">Recommend an Event</a>
+      </div>
+      <button class="signup-button">Sign Up</button>
+    </nav>
   </header>
 
   <div class="container">
-
     <!-- Personality Quiz Section -->
     <section class="section personality-quiz">
-      <h2>Sign Up and Discover Your Personality</h2>
+      <h2>Discover Your Personality</h2>
       <form>
         <label for="question1">What do you enjoy most during your free time?</label>
         <input type="text" id="question1" placeholder="Answer here...">
@@ -31,32 +43,10 @@
       </form>
     </section>
 
-    <!-- Groups Section -->
-    <section class="section groups">
-      <h2>Groups Based on Personality</h2>
-      <div class="groups">
-        <div class="card">
-          <h3>Adventure Seekers</h3>
-          <p>For those who love hiking and exploring the outdoors.</p>
-          <button>Join Group</button>
-        </div>
-        <div class="card">
-          <h3>Board Game Enthusiasts</h3>
-          <p>Join like-minded people for fun game nights.</p>
-          <button>Join Group</button>
-        </div>
-        <div class="card">
-          <h3>Entertainment Lovers</h3>
-          <p>Plan movie nights, theater visits, and more.</p>
-          <button>Join Group</button>
-        </div>
-      </div>
-    </section>
-
     <!-- Events Section -->
     <section class="section events">
       <h2>Upcoming Events</h2>
-      <div class="events">
+      <div class="events-carousel">
         <div class="card">
           <h3>Mountain Hiking Trip</h3>
           <p>Spaces Available: 5</p>
@@ -74,23 +64,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Recommended Events Section -->
-    <section class="section recommended">
-      <h2>Recommended Events for You</h2>
-      <div class="events">
-        <div class="card">
-          <h3>Sunrise Trekking</h3>
-          <p>Based on your love for adventures.</p>
-          <button>Join Event</button>
-        </div>
-        <div class="card">
-          <h3>Strategy Game Night</h3>
-          <p>Perfect for strategic thinkers.</p>
-          <button>Join Event</button>
-        </div>
-      </div>
-    </section>
   </div>
 
   <footer>
@@ -99,4 +72,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
