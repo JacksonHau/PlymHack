@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Profile - Sircle</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="Sircle Logo" class="logo">
+    <nav>
+      <button class="menu-button">Menu</button>
+      <div class="menu">
+        <a href="Sircle.html">Home Page</a>
+        <a href="edit-profile.html">Edit My Profile</a>
+        <a href="recommended-events.html">Recommended Events</a>
+        <a href="upcoming-events.html">Upcoming Events</a>
+        <a href="past-events.html">Past Events</a>
+        <a href="recommend-event.html">Recommend an Event</a>
+      </div>
+      <button class="signup-button">Sign Up</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Edit Profile Section -->
+    <section class="edit-profile">
+      <h1>Edit Your Profile</h1>
+      <p>Update your information to make the most out of Sircle.</p>
+
+      <form action="#" method="POST" class="edit-profile-form">
+        <!-- Profile Picture -->
+        <div class="form-group">
+          <label for="profile-picture">Profile Picture</label>
+          <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+        </div>
+
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter a new password">
+        </div>
+
+        <!-- Bio -->
+        <div class="form-group">
+          <label for="bio">Bio</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+        </div>
+
+        <!-- Interests -->
+        <div class="form-group">
+          <label for="interests">Interests</label>
+          <input type="text" id="interests" name="interests" placeholder="e.g., Hiking, Cooking, Music Festivals">
+        </div>
+
+        <!-- Save Button -->
+        <button type="submit" class="save-button">Save Changes</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sircle. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Events - Monthly Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="Sircle Logo" class="logo">
+    <nav>
+      <button class="menu-button">Menu</button>
+      <div class="menu">
+        <a href="Sircle.html">Home Page</a>
+        <a href="edit-profile.html">Edit My Profile</a>
+        <a href="recommended-events.html">Recommended Events</a>
+        <a href="upcoming-events.html">Upcoming Events</a>
+        <a href="past-events.html">Past Events</a>
+        <a href="recommend-event.html">Recommend an Event</a>
+      </div>
+      <button class="signup-button">Sign Up</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Upcoming Events</h1>
+    <p>Explore your events organized in a monthly calendar format below.</p>
+
+    <!-- Monthly Calendar Section -->
+    <section class="calendar">
+      <div class="calendar-header">
+        <button id="prevMonth">&lt;</button>
+        <h2 id="monthYear">February 2025</h2>
+        <button id="nextMonth">&gt;</button>
+      </div>
+
+      <div class="calendar-grid" id="calendarGrid">
+        <!-- Days of the week -->
+        <div class="day-name">Sun</div>
+        <div class="day-name">Mon</div>
+        <div class="day-name">Tue</div>
+        <div class="day-name">Wed</div>
+        <div class="day-name">Thu</div>
+        <div class="day-name">Fri</div>
+        <div class="day-name">Sat</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sircle. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const events = [
+      { date: "2025-02-04", title: "Mountain Hike", time: "9:00 AM" },
+      { date: "2025-02-07", title: "Community Yoga", time: "6:00 PM" },
+      { date: "2025-02-10", title: "Board Game Night", time: "7:00 PM" },
+      { date: "2025-03-05", title: "Music Festival", time: "4:00 PM" },
+      { date: "2025-03-18", title: "Cooking Workshop", time: "3:00 PM" },
+      { date: "2025-03-25", title: "Theater Night", time: "8:00 PM" },
+    ];
+
+    const monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+
+    const calendarGrid = document.getElementById("calendarGrid");
+    const monthYear = document.getElementById("monthYear");
+
+    let currentMonth = 1; // February
+    let currentYear = 2025;
+
+    function renderCalendar(month, year) {
+      // Clear previous calendar
+      calendarGrid.innerHTML = `
+        <div class="day-name">Sun</div>
+        <div class="day-name">Mon</div>
+        <div class="day-name">Tue</div>
+        <div class="day-name">Wed</div>
+        <div class="day-name">Thu</div>
+        <div class="day-name">Fri</div>
+        <div class="day-name">Sat</div>
+      `;
+
+      // Get first day and total days in the month
+      const firstDay = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+      // Render empty slots for days before the first day of the month
+      for (let i = 0; i < firstDay; i++) {
+        calendarGrid.innerHTML += `<div class="day"></div>`;
+      }
+
+      // Render days with events
+      for (let day = 1; day <= daysInMonth; day++) {
+        const date = `${year}-${String(month + 1).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+        const dayEvents = events.filter(event => event.date === date);
+
+        let eventHTML = "";
+        dayEvents.forEach(event => {
+          eventHTML += `
+            <div class="event">
+              <h3>${event.title}</h3>
+              <p>${event.time}</p>
+            </div>
+          `;
+        });
+
+        calendarGrid.innerHTML += `
+          <div class="day">
+            <span class="date">${day}</span>
+            ${eventHTML}
+          </div>
+        `;
+      }
+
+      // Update the header
+      monthYear.textContent = `${monthNames[month]} ${year}`;
+    }
+
+    // Event listeners for month navigation
+    document.getElementById("prevMonth").addEventListener("click", () => {
+      if (currentMonth === 0) {
+        currentMonth = 11;
+        currentYear--;
+      } else {
+        currentMonth--;
+      }
+      renderCalendar(currentMonth, currentYear);
+    });
+
+    document.getElementById("nextMonth").addEventListener("click", () => {
+      if (currentMonth === 11) {
+        currentMonth = 0;
+        currentYear++;
+      } else {
+        currentMonth++;
+      }
+      renderCalendar(currentMonth, currentYear);
+    });
+
+    // Initial render
+    renderCalendar(currentMonth, currentYear);
+  </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
