@@ -1,0 +1,99 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffd6a5;
+    color: #873230;
+  }
+  
+  header {
+    background-color: #d15856;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 3px solid #873230;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: #d15856;
+  }
+  
+  /* Form Styling */
+  .personality-quiz input[type="text"],
+  .personality-quiz input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #873230;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .personality-quiz input[type="submit"] {
+    background-color: #d15856;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .personality-quiz input[type="submit"]:hover {
+    background-color: #873230;
+  }
+  
+  /* Group and Event Cards */
+  .groups, .events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: #ffd6a5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #d15856;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: #873230;
+  }
+  
+  .card button {
+    background-color: #d15856;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #873230;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background: #873230;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
