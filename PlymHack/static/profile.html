@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Sircle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>User Profile</h2>
+        <form id="profileForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="button" onclick="updateProfile()">Update Profile</button>
+        </form>
+        <p><a href="home.html">Back to Dashboard</a></p>
+        <p><a href="javascript:logout()">Logout</a></p>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>
