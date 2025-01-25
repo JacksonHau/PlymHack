@@ -14,6 +14,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     .then(data => {
         alert(data.message);
         if (response.status === 200) {
+            localStorage.setItem('user', JSON.stringify({username: username})); // Save user info in localStorage
             window.location.href = 'home.html'; // Redirect to home page after successful login
         }
     })

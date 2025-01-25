@@ -7,5 +7,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function logout() {
     localStorage.removeItem('user');
-    window.location.href = 'signup.html'; // Redirect to sign-up page on logout
+    window.location.href = 'login.html'; // Redirect to login page on logout
 }
