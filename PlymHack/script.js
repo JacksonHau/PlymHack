@@ -1,3 +1,3 @@
-function changeText() {
-    document.getElementById("demo").innerHTML = "You clicked the button, and now the text has changed!";
+function joinEvent(eventName) {
+    alert("Thank you for joining the " + eventName + "!");
 }
