@@ -1,74 +1,109 @@
-/* Basic reset */
-* {
+/* General Reset */
+body, html {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #fefae0;
+    color: #283618;
 }
 
-body, html {
-    height: 100%;
-    font-family: 'Arial', sans-serif;
-    background: #f4f4f4;
+header {
+    background-color: #606c38;
+    color: #fefae0;
+    padding: 15px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #283618;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav {
+    display: flex;
     align-items: center;
 }
 
-.form-container {
-    background: white;
-    padding: 40px;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    display: flex;
+.menu {
+    display: none;
     flex-direction: column;
+    background-color: #283618;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-h2 {
+.menu a {
+    color: #fefae0;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.menu a:hover {
+    color: #dda15e;
+}
+
+.menu-button, .signup-button {
+    background-color: #dda15e;
+    color: #283618;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.menu-button:hover, .signup-button:hover {
+    background-color: #bc6c25;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home {
     text-align: center;
-    color: #333;
+    padding: 40px 20px;
+}
+
+.home h1 {
+    color: #606c38;
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-input[type="text"], input[type="password"], input[type="email"], button {
-    padding: 15px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
-button {
-    background-color: #0056b3;
+.explore-button {
+    background-color: #283618;
     color: white;
     border: none;
-    font-size: 16px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #003d7a;
+.explore-button:hover {
+    background-color: #bc6c25;
 }
 
-a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-p {
+footer {
+    background: #283618;
+    color: #fefae0;
     text-align: center;
+    padding: 10px;
     margin-top: 20px;
-}
-
-/* Responsive design tweaks */
-@media (max-width: 400px) {
-    .form-container {
-        padding: 20px;
-    }
 }
