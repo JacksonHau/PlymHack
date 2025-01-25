@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome - Sircle</title>
+    <title>Welcome to Sircle</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Sircle</h1>
+        <img src="logo.png" alt="Sircle Logo" class="logo">
         <nav>
-            <button onclick="logout()">Logout</button>
+            <button class="menu-button">Menu</button>
+            <div class="menu">
+                <a href="index.html">Home Page</a>
+                <a href="edit-profile.html">Edit My Profile</a>
+                <a href="recommended-events.html">Recommended Events</a>
+                <a href="upcoming-events.html">Upcoming Events</a>
+                <a href="past-events.html">Past Events</a>
+                <a href="recommend-event.html">Recommend an Event</a>
+            </div>
+            <button class="signup-button" onclick="logout()">Logout</button>
         </nav>
     </header>
     <main>
-        <h2>Hello, <span id="username">User</span>!</h2>
-        <p>Welcome to your dashboard. Here you can view and join upcoming events.</p>
+        <div class="container">
+            <section class="home">
+                <h1>Welcome, <span id="username">User</span>!</h1>
+                <p>Connect with like-minded people, plan events, and find your tribe. Start your journey by exploring upcoming events!</p>
+                <button class="explore-button">Explore Events</button>
+            </section>
+            <!-- Events Section Similar to Provided Sircle.html -->
+            <!-- Add Event Cards Here If Needed -->
+        </div>
     </main>
     <footer>
-        <p>Contact Us</p>
+        <p>&copy; 2025 Sircle. All rights reserved.</p>
     </footer>
     <script src="home.js"></script>
 </body>
