@@ -26,6 +26,7 @@ Our target audience ranges from social butterflies who enjoy building connection
 ## What kind of content will your website feature?
 The homepage has a modern look which clearly displays the upcoming events which one can join alongside a concise description. Further content such as a photo gallery of previous events can be found in the ‘menu’ -> ‘past events’ area, which showcases the success of these meetings. Feedback and suggestions are available to continuously improve the website.
 
+
 ## How often will the content be updated?
 The goal is to make several events per week, allowing a range of activities to be chosen from for all types of audiences. Hence, the content will be updated and regulated weekly.
 
@@ -73,9 +74,6 @@ No legal disclaimers have been implemented; however, it is likely that a terms o
 ## Are there any compliance issues to consider?
 We must ensure that there are no infringements to the Copyright, Designs and Patents Act 1988. This has been considered, and we have decided to use license-free images from Unsplash, preventing the use of copyrighted pictures.
 Analytics and Tracking
-How will you measure the success of your website?
+
+## How will you measure the success of your website?
 Provide private access to certain individuals first through word of mouth, gain constructive feedback, and then update the website accordingly. Once enhanced, the website can be released to the public.
-
-## What analytics tools will you use to track user behaviour and website performance?
-An optional feedback form is included in the website for users who wish to share their experience, concerns and suggestions with us.
-
