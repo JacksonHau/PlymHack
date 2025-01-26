@@ -387,4 +387,23 @@ textarea:focus {
   background-color: #bc6c25; /* Brown */
 }
 
+/* Photo Gallery Styles */
+.photo-gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
 
