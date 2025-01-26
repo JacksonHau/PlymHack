@@ -535,3 +535,79 @@ textarea:focus {
 .tabcontent.active {
   display: block;
 }
+
+.tabcontent img.event-image {
+  width: 100%; /* Ensures the image fills the container */
+  height: auto; /* Maintains the aspect ratio */
+  object-fit: cover; /* Covers the area of the container without distorting the image */
+  max-height: 400px; /* Optionally limit the height */
+}
+
+.join-button {
+  padding: 10px 20px;
+  background-color: #8a9a5b; /* Lighter green to match your color scheme */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.join-button:hover {
+  background-color: #283618; /* Darker green for hover effect */
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.event-card {
+  background: #fefae0;
+  border: 2px solid #bc6c25;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 10px;
+  color: #283618;
+}
+
+.event-info h3 {
+  margin-top: 0;
+}
+
+.event-info p {
+  margin-bottom: 5px;
+}
+
+.status-attended {
+  color: green;
+}
+
+.status-missed {
+  color: red;
+}
+
+
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -30,3 +30,7 @@ function openEvent(evt, eventName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.querySelector('.tablinks.active').click();
+
+function joinEvent(eventName) {
+  alert("Thank you for joining " + eventName + "!");
+}
