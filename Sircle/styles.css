@@ -418,6 +418,40 @@ textarea:focus {
   }
 }
 
+/* Style the tab */
+.tabs {
+  overflow: hidden;
+  background-color: #f1f1f1; /* Neutral background */
+}
 
+/* Style the buttons inside the tab */
+.tablinks {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #283618; /* Dark green for text */
+}
 
+/* Change background color of buttons on hover and active */
+.tablinks:hover,
+.tablinks.active {
+  background-color: #8a9a5b; /* Lighter green as requested */
+  color: #fefae0; /* Cream color for contrast */
+}
 
+/* Style the tab content (add this if not already styled) */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background-color: #fefae0; /* Cream background for content */
+}
+.tabcontent.active {
+  display: block;
+}

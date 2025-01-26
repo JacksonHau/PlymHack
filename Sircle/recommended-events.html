@@ -25,7 +25,41 @@
   <main class="container">
     <h1>Recommended Events</h1>
     <p>Events recommended just for you, based on your interests and past activity.</p>
-    <!-- Similar structure for events carousel or a list as seen in the home page -->
+    
+    <!-- Tabbed interface for events -->
+    <div class="tabs">
+      <button class="tablinks active" onclick="openEvent(event, 'Event1')">Event 1</button>
+      <button class="tablinks" onclick="openEvent(event, 'Event2')">Event 2</button>
+      <button class="tablinks" onclick="openEvent(event, 'Event3')">Event 3</button>
+      <button class="tablinks" onclick="openEvent(event, 'Event4')">Event 4</button>
+      <button class="tablinks" onclick="openEvent(event, 'Event5')">Event 5</button>
+    </div>
+    <div id="Event1" class="tabcontent active">
+      <h3>Mountain Hiking Trip</h3>
+      <p>Date: February 5, 2025</p>
+      <p>Details about the mountain hiking trip...</p>
+    </div>
+    <div id="Event2" class="tabcontent">
+      <h3>Board Game Night</h3>
+      <p>Date: February 10, 2025</p>
+      <p>Details about the board game night...</p>
+    </div>
+    <div id="Event3" class="tabcontent active">
+        <h3>Mountain Hiking Trip</h3>
+        <p>Date: February 5, 2025</p>
+        <p>Details about the mountain hiking trip...</p>
+      </div>
+      <div id="Event4" class="tabcontent">
+        <h3>Board Game Night</h3>
+        <p>Date: February 10, 2025</p>
+        <p>Details about the board game night...</p>
+      </div>
+      <div id="Event5" class="tabcontent">
+        <h3>Board Game Night</h3>
+        <p>Date: February 10, 2025</p>
+        <p>Details about the board game night...</p>
+      </div>
+    <!-- Add additional divs for other events as needed -->
   </main>
   <footer>
     <p>&copy; 2025 Sircle. All rights reserved.</p>
