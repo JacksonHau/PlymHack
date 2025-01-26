@@ -50,7 +50,7 @@ nav {
 .menu-button,
 .signup-button {
   background-color: #606c38; /* Switched from #dda15e */
-  color: #283618; /* Switched from #bc6c25 */
+  color: white; /* Switched from #bc6c25 */
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -92,7 +92,7 @@ nav {
 
 .explore-button {
   background-color: #606c38; /* Switched from #dda15e */
-  color: #283618; /* Switched from #bc6c25 */
+  color: white; /* Switched from #bc6c25 */
   border: none;
   padding: 15px 20px;
   border-radius: 5px;
@@ -120,6 +120,49 @@ nav {
   background-color: #283618; /* Switched from #bc6c25 */
   border-radius: 10px;
 }
+/* --- */
+.card-home-page {
+  min-width: 200px;
+  max-width: 220px;
+  background: #8a9a5b; /* Switched from #dda15e */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #283618; /* Switched from #283618 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-home-page .event-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-home-page h3 {
+  margin: 10px 0;
+  color: #283618; /* Switched from #bc6c25 */
+}
+
+.card-home-page p {
+  margin: 5px 0;
+  color: white; /* Switched from #606c38 */
+}
+
+.card-home-page button {
+  background-color: #283618; /* Switched from #bc6c25 */
+  color: #dda15e;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-home-page button:hover {
+  background-color: #bc6c25; /* Switched from #283618 */
+}
+/* --- */
 
 .card {
   min-width: 200px;
@@ -300,4 +343,48 @@ footer {
   margin: 0;
   font-size: 0.8rem;
 }
+
+/* Form enhancements for sleek design */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #283618; /* Greenish tone */
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bc6c25; /* Brownish tone */
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+  border-color: #dda15e; /* Light brown */
+  outline: none;
+}
+
+.submit-button {
+  background-color: #283618; /* Dark green */
+  color: #fefae0; /* Cream */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #bc6c25; /* Brown */
+}
+
 
